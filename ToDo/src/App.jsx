@@ -76,7 +76,7 @@ function App() {
           <h2 className='text-lg font-bold'>Add a Task</h2>
           <div className="flex">
           <input onChange={handleChange} value={Todo} type="text" className='w-full rounded-lg px-3 py-1' />
-          <button onClick={handleAdd} disabled={Todo.length<=3} className='bg-violet-800 hover:bg-violet-700 p-4 py-2  text-white disabled:via-violet-200 font-bold rounded-full mx-2'>Add</button>
+          <button onClick={handleAdd} disabled={Todo.length<=1} className='bg-violet-800 hover:bg-violet-700 p-4 py-2  text-white disabled:via-violet-200 font-bold rounded-full mx-2'>Add</button>
           </div>
         </div>
         <input onChange={togglefinsih} type="checkbox" checked={showfinished} /> Show finished
